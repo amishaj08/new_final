@@ -1,10 +1,39 @@
 ---
-title: "About this site"
+title: "About this Site"
 description: |
-  Some additional details about the website
+  Some details about the project
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+**Published:** 07-06-22
+
+**Author:** Amisha Jain
+
+## About Me
+My name is **Amisha Jain** and I am 16 years old.
+I am a junior at Metea Valley High School. What inspired me to create this data science project is that I am a black belt in Tang Soo Do Karate.
+The best way to contact me is by my email:
+amishaj08@gmail.com
+
+My Github Repo Link for this Project:
+https://github.com/amishaj08/new_final
+
+## About the Project
+**Title:** Karate Statistics around the World
+
+**Description:** My project, *Karate Statistics around the World*, has graphs that give extra information about karate that is going on in the US and other countries. The first graph analyzes the different genders that instruct karate at their studio. The second graph has data about the most medals won by different countries during the 2021 World Karate Championships U21.
+
+**Data Sources:** I used two websites for the graphs. They had tables of information which I was able to use.
+One is [Zippia: The Career Expert](https://www.zippia.com/martial-arts-instructor-jobs/demographics/) and the other is [Wikipedia](https://en.wikipedia.org/wiki/World_Cadet,_Junior_and_U21_Karate_Championships). 
+
+
+*I learned how to create this project from David Kane's Bootcamp!*
+
+"This is data science"   
+  ~ Preceptor
+
+[Kane’s Free High School Data Science Bootcamp](https://bootcamp.davidkane.info)
 

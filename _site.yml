@@ -1,7 +1,7 @@
 name: "."
-title: "Karate Statistics in the US"
+title: "Karate Statistics around the World"
 description: |
-  Karate Statistics in the US
+  Karate Statistics around the World
 output_dir: "docs"
 navbar:
   right:
