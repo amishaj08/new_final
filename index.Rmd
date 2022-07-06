@@ -7,6 +7,12 @@ site: distill::distill_website
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+library(plotly)
+library(janitor)
+library(tidyr)
+library(knitr)
 
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
@@ -15,4 +21,64 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
+
+```{r find_url, echo = FALSE}
+web_url <- "https://www.zippia.com/martial-arts-instructor-jobs/demographics/"
+
+pick_data <- web_url |> read_html() |> 
+  html_elements("table") |> 
+  html_table()
+
+#I want to pick the non-table. Figure that part out.
+```
+
+```{r cleaning_data, echo = FALSE}
+fix_code <- pick_data[[2]] |> 
+  pivot_longer(cols = c(Male, Female), names_to = "Gender") |> 
+  mutate(Year = as.integer(Year)) |> 
+  rename(year = Year) |> 
+  mutate(year = as.character(year)) |> 
+  mutate(year = substr(year, 1, 4))
+  
+```
+
+```{r plot_data, echo = FALSE}
+set_data <- fix_code |> 
+  ggplot(aes(x = year, y = value, fill = Gender)) + 
+  geom_point() + theme_classic() +
+  labs(title = "Number of Martial Arts Instructors per Year by Gender", 
+       subtitle = "Every year there were more male instructors than female", 
+       x = "Year", y = "Percentage of Instructors", 
+       caption = "Source: Zippia -- The Career Expert") + 
+ scale_x_discrete(guide = guide_axis(angle = 45))
+
+ggplotly(set_data, tooltip = "all")
+
+#what kind of graph do I want?
+```
+
+```{r pick_url, echo = FALSE}
+web_url <- "https://en.wikipedia.org/wiki/World_Cadet,_Junior_and_U21_Karate_Championships"
+
+source_data <- web_url |> read_html() |> 
+html_elements("table") |> html_table()
+
+```
+
+```{r fixing_up, echo = FALSE}
+source_data[[4]] |> 
+  slice(1:20) |> ggplot(aes(x = fct_reorder(Nation, Rank), 
+                            y = Total, fill = Gold)) + 
+  geom_col() + scale_x_discrete(guide = guide_axis(angle = 45)) +
+  theme_classic() + 
+  labs(title = "Countries in World Karate Championships Ranked by Medals", 
+       subtitle = "Japan is #1 with most gold but not the most total medals", 
+       x = "Countries", y = "Total Number of Medals", 
+       caption = "Source: Wikipedia")
+
+#plot_made
+#nations arranged by rank
+#try to make it interactive
+```
+
 
