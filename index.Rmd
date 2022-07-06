@@ -1,9 +1,12 @@
 ---
-title: "Karate Statistics in the US"
+title: "Karate Statistics Around the World"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  This project examines different graphs that analyze statistics about Martial Arts in different countries!
+author:
+  - name: Amisha Jain
 site: distill::distill_website
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -21,6 +24,12 @@ library(knitr)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
+
+**Karate Instructors**
+
+
+*Note: This graph is interactive so click on a point to get more information!*
+
 
 ```{r find_url, echo = FALSE}
 web_url <- "https://www.zippia.com/martial-arts-instructor-jobs/demographics/"
@@ -42,6 +51,7 @@ fix_code <- pick_data[[2]] |>
   
 ```
 
+
 ```{r plot_data, echo = FALSE}
 set_data <- fix_code |> 
   ggplot(aes(x = year, y = value, fill = Gender)) + 
@@ -56,6 +66,15 @@ ggplotly(set_data, tooltip = "all")
 
 #what kind of graph do I want?
 ```
+
+#### The source is Zippia -- The Career Expert.
+
+The graph above demonstrates how there are less female instructors than male every year. As shown in the plot, the percentage of female instructors was always around 20% while male instructors was around 75%. This brings up the questions of why women aren't as involved in this sport and how this can increase around the world. This statistic is specifically from 2010 to 2019 in the United States.
+
+
+
+
+**World Karate Championships**
 
 ```{r pick_url, echo = FALSE}
 web_url <- "https://en.wikipedia.org/wiki/World_Cadet,_Junior_and_U21_Karate_Championships"
@@ -81,4 +100,10 @@ source_data[[4]] |>
 #try to make it interactive
 ```
 
+The graph above is data from World Karate Championships 2021 Juniors. It was held in Cape Town, South Africa for Under 21. The brighter the blue in the graph, the more gold that country has won. The United States isn't as involved in karate hence why we have not received many medals. The highest total medals is France as depicted above. 
+
+
+## Summary
+
+Although karate is not a common sport in the Untied States, it is well known around the world. Throughout the years, participation has increased with more female students and instructors! There are many forms of Martial Arts such as Tae Kwon Do, Tang Soo Do, and Hapkido. The next World Karate Championships for Juniors is in 2023.
 

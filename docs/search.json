@@ -6,15 +6,20 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-06T13:51:18-05:00"
+      "last_modified": "2022-07-06T15:22:57-05:00"
     },
     {
       "path": "index.html",
-      "title": "Karate Statistics in the US",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
-      "author": [],
-      "contents": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-      "last_modified": "2022-07-06T13:51:24-05:00"
+      "title": "Karate Statistics Around the World",
+      "description": "This project examines different graphs that analyze statistics about Martial Arts in different countries!\n",
+      "author": [
+        {
+          "name": "Amisha Jain",
+          "url": {}
+        }
+      ],
+      "contents": "\nKarate Instructors\nNote: This graph is interactive so click on a point to get more\ninformation!\n\n\n\n\n\n\n\n\n\nThe source is Zippia –\nThe Career Expert.\nThe graph above demonstrates how there are less female instructors\nthan male every year. As shown in the plot, the percentage of female\ninstructors was always around 20% while male instructors was around 75%.\nThis brings up the questions of why women aren’t as involved in this\nsport and how this can increase around the world. This statistic is\nspecifically from 2010 to 2019 in the United States.\nWorld Karate Championships\n\n\n\n\n\n\nThe graph above is data from World Karate Championships 2021 Juniors.\nIt was held in Cape Town, South Africa for Under 21. The brighter the\nblue in the graph, the more gold that country has won. The United States\nisn’t as involved in karate hence why we have not received many medals.\nThe highest total medals is France as depicted above.\nSummary\nAlthough karate is not a common sport in the Untied States, it is\nwell known around the world. Throughout the years, participation has\nincreased with more female students and instructors! There are many\nforms of Martial Arts such as Tae Kwon Do, Tang Soo Do, and Hapkido. The\nnext World Karate Championships for Juniors is in 2023.\n\n\n\n",
+      "last_modified": "2022-07-06T15:23:04-05:00"
     }
   ],
   "collections": []
