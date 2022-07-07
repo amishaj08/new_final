@@ -4,6 +4,7 @@ description: |
   This project examines different graphs that analyze statistics about Martial Arts in different countries!
 author:
   - name: Amisha Jain
+date: "`r Sys.Date()`"
 site: distill::distill_website
 ---
 

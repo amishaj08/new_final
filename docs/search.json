@@ -6,7 +6,7 @@
       "description": "Some details about the project",
       "author": [],
       "contents": "\nPublished: 07-06-22\nAuthor: Amisha Jain\nAbout Me\nMy name is Amisha Jain and I am 16 years old. I am a\njunior at Metea Valley High School. What inspired me to create this data\nscience project is that I am a black belt in Tang Soo Do Karate. The\nbest way to contact me is by my email: amishaj08@gmail.com\nMy Github Repo Link for this Project: https://github.com/amishaj08/new_final\nAbout the Project\nTitle: Karate Statistics around the World\nDescription: My project, Karate Statistics\naround the World, has graphs that give extra information about\nkarate that is going on in the US and other countries. The first graph\nanalyzes the different genders that instruct karate at their studio. The\nsecond graph has data about the most medals won by different countries\nduring the 2021 World Karate Championships U21.\nData Sources: I used two websites for the graphs.\nThey had tables of information which I was able to use. One is Zippia:\nThe Career Expert and the other is Wikipedia.\nI learned how to create this project from David Kane’s\nBootcamp!\n“This is data science”\n\nPreceptor\n\nKane’s Free High School\nData Science Bootcamp\n\n\n\n",
-      "last_modified": "2022-07-06T15:58:58-05:00"
+      "last_modified": "2022-07-06T15:59:38-05:00"
     },
     {
       "path": "index.html",
@@ -18,8 +18,9 @@
           "url": {}
         }
       ],
+      "date": "`r Sys.Date()`",
       "contents": "\nKarate Instructors\nNote: This graph is interactive so click on a point to get more\ninformation!\n\n\n\n\n\n\n\n\n\nThe source is Zippia –\nThe Career Expert.\nThe graph above demonstrates how there are less female instructors\nthan male every year. As shown in the plot, the percentage of female\ninstructors was always around 20% while male instructors was around 75%.\nThis brings up the questions of why women aren’t as involved in this\nsport and how this can increase around the world. This statistic is\nspecifically from 2010 to 2019 in the United States.\nWorld Karate Championships\n\n\n\n\n\n\nThe graph above is data from World Karate Championships 2021 Juniors.\nIt was held in Cape Town, South Africa for Under 21. The brighter the\nblue in the graph, the more gold that country has won. The United States\nisn’t as involved in karate hence why we have not received many medals.\nThe highest total medals is France as depicted above.\nSummary\nAlthough karate is not a common sport in the Untied States, it is\nwell known around the world. Throughout the years, participation has\nincreased with more female students and instructors! There are many\nforms of Martial Arts such as Tae Kwon Do, Tang Soo Do, and Hapkido. The\nnext World Karate Championships for Juniors is in 2023.\n\n\n\n",
-      "last_modified": "2022-07-06T15:59:05-05:00"
+      "last_modified": "2022-07-06T21:06:57-05:00"
     }
   ],
   "collections": []
